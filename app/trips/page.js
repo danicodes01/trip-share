@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import classes from './page.module.css'
 import { getTrips } from '../../lib/trips'
+import TripsGrid from '../../components/trips/trips-grid'
 
 import Image from 'next/image'
 export default async function TripsPage () {

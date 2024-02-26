@@ -1,3 +1,4 @@
+import TripItem from "./trip-item";
 export default function TripsGrid({trips}) {
     return (
         <ul>
