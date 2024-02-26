@@ -20,6 +20,7 @@
 .env.local
 .DS_Store
 *.pem
+trips.db
 
 # debug
 npm-debug.log*
