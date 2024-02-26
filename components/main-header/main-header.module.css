@@ -12,7 +12,7 @@
       padding: 0;
       display: flex;
       gap: .75rem;
-      font-size: 1rem;
+      font-size: .75rem;
     }
     
     .nav a {
@@ -37,7 +37,7 @@
     }
     
     .logo img {
-        width: 9rem;
+        width: 5rem;
         height: 5rem;
         object-fit: contain;
     }
