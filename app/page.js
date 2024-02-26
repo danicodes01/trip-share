@@ -9,10 +9,9 @@ export default function Home () {
           <Carousel />
         </div>
       </header>
-        <div className={classes.intro}>
-  
+        <main className={classes.intro}>
           <p><Link href='/trips/share' className={classes.link}>share </Link>and inspire others with your experiences</p>
-      </div>
+      </main>
     </>
   )
 }
