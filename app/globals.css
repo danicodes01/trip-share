@@ -23,7 +23,7 @@ body {
   --color-primary-200: #884c97;
   --color-primary-300: #843897;
   --color-primary-400: #732392;
-  --color-primary-500: #5a097a;
+  --color-primary-500: #FF385C;
   --color-primary-600:  linear-gradient(to right, #E61E4D 0%, #E31C5F 50%, #D70466 100%);
   --color-primary-700: #460479;
 
@@ -41,6 +41,11 @@ body {
 
   margin: 0;
   background-color: var(--color-grey-50);
+}
+
+p {
+  color: var(--color-grey-800);
+  font-size: var(--size-3);
 }
 
 .header-background {
