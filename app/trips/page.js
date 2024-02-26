@@ -2,8 +2,8 @@ import Link from 'next/link'
 import classes from './page.module.css'
 import { getTrips } from '../../lib/trips'
 import Image from 'next/image'
-export default function TripsPage () {
-  const trips = getTrips()
+export default async function TripsPage () {
+  const trips = await getTrips()
 
   return (
     <>
