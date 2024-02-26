@@ -7,7 +7,7 @@ const data = [
   {
     title: 'Old bug',
     slug: 'old-bug',
-    image: 'bug.jpg',
+    image: '/images/bug.jpg',
     summary: 'An old bug',
     description: `
      We saw this cute old bug in Oaxaca!
@@ -18,7 +18,7 @@ const data = [
   {
     title: 'Cactus',
     slug: 'cactus',
-    image: 'cactus.jpg',
+    image: '/images/cactus.jpg',
     summary: 'A lovely cactus by the sea',
     description: `
          We almost stepped on this beautiful cactus in Costa Rica!
@@ -29,7 +29,7 @@ const data = [
   {
     title: 'Latinoamericana',
     slug: 'clock-tower',
-    image: 'clocktower.jpg',
+    image: '/images/clocktower.jpg',
     summary: 'Tower in the city',
     description: `
       This is one of the coolest buildings in Mexico City! It even has a clock on it! 
@@ -40,7 +40,7 @@ const data = [
   {
     title: 'Mars',
     slug: 'mars',
-    image: 'mars.jpg',
+    image: '/images/mars.jpg',
     summary: 'Mars on stoop',
     description: `
    This is my cat before we left on our trip.
@@ -51,7 +51,7 @@ const data = [
   {
     title: 'Parque Roma Norte',
     slug: 'roma',
-    image: 'roma.jpg',
+    image: '/images/roma.jpg',
     summary: 'lovely park in Roma',
     description: `
       This park is right next to the only english bookstore in town!
