@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import classes from './page.module.css'
 import { getTrips } from '../../lib/trips'
+import TripsGrid from '../../components/trips/trips-grid'
+
 import Image from 'next/image'
 export default async function TripsPage () {
   const trips = await getTrips()
@@ -16,26 +18,7 @@ export default async function TripsPage () {
         </p>
       </header>
       <main>
-        <ul>
-          {trips.map(trip => (
-            <li key={trip.slug}>
-              <article>
-                <header>
-                  <div>
-                    <Image src={trip.image} alt={trip.title} width={500} height={300} />
-                  </div>
-                  <div>
-                    <h4>{trip.title}</h4>
-                    <p>by {trip.author}</p>
-                  </div>
-                </header>
-                <div>
-                  <p>{trip.summary}</p>
-                </div>
-              </article>
-            </li>
-          ))}
-        </ul>
+        <TripsGrid trips={trips}/>
       </main>
     </>
   )
