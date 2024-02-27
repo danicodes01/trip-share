@@ -24,11 +24,11 @@ const images = [
 ];
 
 export default function Carousel() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [photoIndex, setPhotoIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
+      setPhotoIndex((prevIndex) =>
         prevIndex < images.length - 1 ? prevIndex + 1 : 0
       );
     }, 5000);
@@ -43,7 +43,7 @@ export default function Carousel() {
         <Image
           key={index}
           src={image.image}
-          className={index === currentImageIndex ? classes.active : ''}
+          className={index === photoIndex ? classes.active : ''}
           alt={image.alt}
         />
       ))}
