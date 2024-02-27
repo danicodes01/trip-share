@@ -1,19 +1,20 @@
 import Image from 'next/image'
-export default function TripItem ({ title, image, summary, location, author}) {
+import classes from './trip-item.module.css'
+export default function TripItem ({ title, image, summary, location, author }) {
   return (
-    <article>
+    <article className={classes.trip}>
       <header>
-        <div>
-          <Image src={image} alt={title} width={500} height={300} />
+        <div className={classes.image}>
+          <Image src={image} alt={title} fill />
         </div>
-        <div>
-          <h4>{title}</h4>
+        <div className={classes.info}>
+          <p>{title}</p>
           <p>{location}</p>
           <p>by {author}</p>
         </div>
       </header>
-      <div>
-        <p>{summary}</p>
+      <div className={classes.content}>
+        <p className={classes.summary}>{summary}</p>
       </div>
     </article>
   )

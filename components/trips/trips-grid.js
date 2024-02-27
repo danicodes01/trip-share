@@ -1,7 +1,8 @@
 import TripItem from "./trip-item";
+import classes from './trips-grid.module.css'
 export default function TripsGrid({trips}) {
     return (
-        <ul>
+        <ul className={classes.trips}>
           {trips.map((trip) => (
             <li key={trip.slug}>
               <TripItem
