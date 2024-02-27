@@ -1,22 +1,25 @@
 .trip {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     justify-content: space-between;
     height: 100%;
     border-radius: 4px;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
-    background-color: var(--color-abbgrey-50);
+    background-color: var(--color-grey-50);
   }
   
   .info {
     padding: 0.5rem 1rem 0 1rem;
+    letter-spacing: 0.10rem;
   }
   
   .info p {
     margin: 0;
     font-size: 0.75rem;
+    color: var(--color-grey-400);
+    
   }
   
   .image {
@@ -29,11 +32,11 @@
   }
 
   .trip p {
-    color: var(--color-abbgrey-100);
+    color: var(--color-grey-400);
 
   }
   
-  .content {
+  .discription {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,3 +48,6 @@
     padding: 1rem 1rem 0 1rem;
   }
   
+  .link {
+    text-decoration: none;
+  }
