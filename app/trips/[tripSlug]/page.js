@@ -1,21 +1,28 @@
-import image from 'next/image'
-export default function TripDetailPage () {
+import Image from 'next/image'
+import { getTripBySlug } from '@/lib/trips'
+import classes from './page.module.css'
+export default async function TripDetailPage ({ params }) {
+  const trip = await getTripBySlug(params.tripSlug)
+  const { title, author, summary, description } = trip
+
   return (
     <>
-    <header>
-      <div>
-        {/* <Image src={trip} alt='title' fill /> */}
-      </div>
-      <div>
-        <h4>title</h4>
-        <p>by author</p>
-        <p>summary</p>
-      </div>
-    </header>
-    <main>
-      <p>description</p>
-    </main>
+      <header className={classes.header}>
+        <div className={classes.imagewrapper}>
+        <div className={classes.image}>
+          <Image src={trip.image} alt='title' layout="fill" />
+        </div>
+
+        </div>
+        <div className={classes.info}>
+          <p>{title}</p>
+          <p>by {author}</p>
+          <p>{summary}</p>
+        </div>
+      <main>
+        <p className={classes.description}>{description}</p>
+      </main>
+      </header>
     </>
-    
   )
 }
