@@ -8,11 +8,8 @@ export default async function TripDetailPage ({ params }) {
   return (
     <>
       <header className={classes.header}>
-        <div className={classes.imagewrapper}>
         <div className={classes.image}>
           <Image src={trip.image} alt='title' layout="fill" />
-        </div>
-
         </div>
         <div className={classes.info}>
           <p>{title}</p>
