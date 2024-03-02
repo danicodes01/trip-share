@@ -3,13 +3,13 @@ import { getTripBySlug } from '@/lib/trips'
 import classes from './page.module.css'
 export default async function TripDetailPage ({ params }) {
   const trip = await getTripBySlug(params.tripSlug)
-  const { title, author, summary, description } = trip
+  const { title, author, summary, description, image } = trip
 
   return (
     <>
       <header className={classes.header}>
         <div className={classes.image}>
-          <Image src={trip.image} alt='title' layout="fill" />
+          <Image src={`https://ourtrips.s3.amazonaws.com/photos/${image}`} alt='title' layout="fill" />
         </div>
         <div className={classes.info}>
           <p>{title}</p>
