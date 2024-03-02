@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.main {
+  margin-top: -2rem;
+}
+
 .link {
   background: var(--color-primary-600); 
   background-clip: text;
@@ -27,4 +31,5 @@
   letter-spacing: 0.15rem;
   color: var(--color-grey-400);
   text-align: center;
+  margin-top: -4rem;
 }
