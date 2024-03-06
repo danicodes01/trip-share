@@ -1,3 +1,4 @@
+
 .header {
     gap: 3rem;
     margin: 1rem auto 3rem auto;
@@ -21,7 +22,7 @@
 .main {
     width: 90%;
     max-width: 75rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
 }
 
 .form {
@@ -30,8 +31,9 @@
 
 .form label {
     display: block;
-    margin-bottom: 1rem;
-    color: var(--color-grey-400)
+    margin-bottom: .05rem;
+    color: var(--color-grey-400);
+    font-weight: bold;
 }
 
 .form input,
@@ -42,15 +44,43 @@
     border: 1px solid var(--color-grey-400);
     border-radius: 0.3rem;
     background: var(--color-grey-100);
-    color: var(--color-grey-500);
+    color: var(--color-grey-400);
     font-size: .75rem;
 }
 
+.form input:focus,
+.form textarea:focus {
+    outline-color: var(--color-grey-300);
+    background-color:var(--color-grey-50);
+}
 .rows {
-    display: subgrid;
+    display: flex;
     gap: 1rem;
 }
 
 .rows p {
     width: 100%;
 }
+
+.submit {
+    text-align: right;
+}
+
+.submit button {
+    border: 0;
+    padding: 0.75rem 2rem;
+    background: var(--color-grey-100);
+    border: none;
+    color: var(--color-grey-400);
+    border-radius: 10px;
+    cursor: pointer;
+    font: inherit;
+    font-size: .75rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+  }
+
+  .submit button:hover,
+  .submit button:focus {
+    background: var(--color-grey-50);
+  }
