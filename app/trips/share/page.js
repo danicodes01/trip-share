@@ -1,12 +1,13 @@
+import classes from './page.module.css'
 export default function ShareTripPage () {
   return (
     <>
-      <header>
-        <p>Share Trip Page</p>
+      <header className={classes.header}>
+        <p><span>share</span> your favorite memories</p>
       </header>
-      <main>
-        <form>
-          <div>
+      <main className={classes.main}>
+        <form className={classes.form}>
+          <div className={classes.rows}>
             <p>
               <label htmlFor='name'>name</label>
               <input type='text' id='name' name='name' />
