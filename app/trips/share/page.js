@@ -1,5 +1,6 @@
 import ImageSelector from '@/components/trips/image-selector'
 import classes from './page.module.css'
+import {create} from '../../../lib/actions'
 export default function ShareTripPage () {
   return (
     <>
@@ -7,15 +8,15 @@ export default function ShareTripPage () {
         <p><span>share</span> your favorite memories</p>
       </header>
       <main className={classes.main}>
-        <form className={classes.form}>
+        <form className={classes.form} action={create}>
           <div className={classes.rows}>
             <p>
-              <label htmlFor='name'>name</label>
-              <input type='text' id='name' name='name' />
+              <label htmlFor='name'>your name</label>
+              <input type='text' id='author' name='author' />
             </p>
             <p>
-              <label>email</label>
-              <input type='email' id='email' name='email' />
+              <label htmlFor='name'>trip location</label>
+              <input type='text' id='location' name='location' />
             </p>
           </div>
           <p>

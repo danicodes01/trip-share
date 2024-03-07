@@ -17,6 +17,7 @@ export default function ImageSelector({ label, name }) {
         const file = e.target.files ? e.target.files[0]: null;
     
         if (!file) {
+            setSelectedImage(null);
           return;
         }
     
@@ -45,6 +46,7 @@ export default function ImageSelector({ label, name }) {
           name={name}
           ref={imageInputRef}
           onChange={handleImageChange}
+          required
         />
         <button
           className={classes.button}
