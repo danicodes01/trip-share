@@ -11,14 +11,18 @@ export default function ShareTripPage () {
         <form className={classes.form} action={create}>
           <div className={classes.rows}>
             <p>
-              <label htmlFor='name'>name</label>
-              <input type='text' id='name' name='name' />
+              <label htmlFor='name'>your name</label>
+              <input type='text' id='author' name='author' />
             </p>
+            <p>
+              <label htmlFor='name'>trip location</label>
+              <input type='text' id='location' name='location' />
+            </p>
+          </div>
           <p>
             <label>title</label>
             <input type='text' id='title' name='title' />
           </p>
-          </div>
           <p>
             <label>summary</label>
             <input type='text' id='summary' name='summary' />
