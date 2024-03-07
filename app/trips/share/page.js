@@ -24,10 +24,6 @@ export default function ShareTripPage () {
             <input type='text' id='title' name='title' />
           </p>
           <p>
-            <label>summary</label>
-            <input type='text' id='summary' name='summary' />
-          </p>
-          <p>
             <label>description</label>
             <textarea id='description' name='description' rows={10} />
           </p>
