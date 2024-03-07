@@ -5,7 +5,6 @@ export default function TripItem ({
   title,
   image,
   slug,
-  summary,
   location,
   author
 }) {
@@ -22,9 +21,6 @@ export default function TripItem ({
             <p>by {author}</p>
           </div>
         </header>
-        <div className={classes.discription}>
-          <p className={classes.summary}>{summary}</p>
-        </div>
       </article>
     </Link>
   )

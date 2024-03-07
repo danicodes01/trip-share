@@ -3,7 +3,7 @@ import { getTripBySlug } from '@/lib/trips'
 import classes from './page.module.css'
 export default async function TripDetailPage ({ params }) {
   const trip = await getTripBySlug(params.tripSlug)
-  const { title, author, summary, description, image } = trip
+  const { title, author, description, image } = trip
 
   return (
     <>
@@ -14,7 +14,7 @@ export default async function TripDetailPage ({ params }) {
         <div className={classes.info}>
           <p>{title}</p>
           <p>by {author}</p>
-          <p>{summary}</p>
+          <p>{}</p>
         </div>
       <main>
         <p className={classes.description}>{description}</p>
