@@ -1,6 +1,7 @@
 import ImageSelector from '@/components/trips/image-selector'
 import classes from './page.module.css'
 import {create} from '../../../lib/actions'
+import TripSubmit from '@/components/trips/trip-submit'
 export default function ShareTripPage () {
   return (
     <>
@@ -29,7 +30,7 @@ export default function ShareTripPage () {
           </p>
           <ImageSelector label='image' name='image' />
           <p className={classes.submit}>
-            <button type="submit">submit</button>
+            <TripSubmit/>
           </p>
         </form>
       </main>
