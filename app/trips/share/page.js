@@ -1,3 +1,4 @@
+import ImageSelector from '@/components/trips/image-selector'
 import classes from './page.module.css'
 export default function ShareTripPage () {
   return (
@@ -28,6 +29,10 @@ export default function ShareTripPage () {
           <p>
             <label>description</label>
             <textarea id='description' name='description' rows={10} />
+          </p>
+          <ImageSelector label='image' name='image' />
+          <p className={classes.submit}>
+            <button type="submit">submit</button>
           </p>
         </form>
       </main>

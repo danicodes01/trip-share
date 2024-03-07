@@ -1,0 +1,55 @@
+.options {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .selector .input {
+    display: none;
+  }
+  
+  .selector .button {
+    border: 0;
+    padding: 0.5rem 2rem;
+    background: var(--color-grey-100);
+    border: none;
+    color: var(--color-grey-400);
+    border-radius: 10px;
+    cursor: pointer;
+    font: inherit;
+    font-size: .75rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+  }
+  
+  .selector .button:hover,
+  .selector .buttton:focus {
+    background: var(--color-grey-50);
+  }
+  
+  .view {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-grey-400);
+    border-radius: 0.3rem;
+    background: var(--color-grey-100);
+    color: var(--color-grey-400);
+    font-size: .75rem;
+  }
+  
+  .view p {
+    margin: 0;
+    padding: 1rem;
+    color: var(--color-grey-400)
+  }
+  
+  .view img {
+    object-fit: cover;
+  }
