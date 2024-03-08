@@ -6,7 +6,7 @@ export default function ShareTripPage () {
   return (
     <>
       <header className={classes.header}>
-        <p><span>share</span> your favorite memories</p>
+        <p><span>share</span> and inspire others with your experiences</p>
       </header>
       <main className={classes.main}>
         <form className={classes.form} action={create}>
