@@ -1,11 +1,8 @@
 import Link from 'next/link'
 import classes from './page.module.css'
-import { getTrips } from '../../lib/trips'
-import TripsGrid from '../../components/trips/trips-grid'
-
-import Image from 'next/image'
-export default async function TripsPage () {
-  const trips = await getTrips()
+import FetchTrips from '../../components/trips/fetch-trips'
+import { Suspense } from 'react'
+export default function TripsPage () {
 
   return (
     <>
@@ -18,7 +15,9 @@ export default async function TripsPage () {
         </p>
       </header>
       <main>
-        <TripsGrid trips={trips}/>
+      <Suspense  fallback={<p className={classes.loading}>Loading ...</p>}>
+        <FetchTrips />
+      </Suspense>
       </main>
     </>
   )
