@@ -56,3 +56,66 @@ p {
   left: 0;
   z-index: -1;
 }
+
+.error,
+.not-found {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.error h2,
+.not-found h2 {
+  font-size: 2rem;
+  margin: 0px;
+  font-weight: 900;
+  color: var( --color-grey-400);
+  text-transform: uppercase;
+  background: var(--color-primary-600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.error p, 
+.not-found p {
+  font-size: .75rem;
+  font-weight: 500;
+  color: var(--color-grey-400);
+}
+
+.error button {
+  border: 0;
+  padding: 0.75rem 2rem;
+  background: var(--color-grey-100);
+  border: none;
+  color: var(--color-grey-400);
+  border-radius: 10px;
+  cursor: pointer;
+  font: inherit;
+  font-size: .75rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.error button:hover,
+.error button:focus {
+  background: var(--color-grey-50);
+}
+
+.not-found a {
+  text-decoration: none;
+  color: var(--color-grey-400);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: .75rem;
+  
+}
+
+.not-found a:hover,
+.not-found a:focus {
+  color:   --color-grey-800;
+  text-shadow: 0 0 18px rgba(52, 52, 52, 0.8);
+}
