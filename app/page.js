@@ -10,7 +10,7 @@ export default function Home () {
         </div>
       </header>
       <main className={classes.intro}>
-  <p><Link href='/trips/share' className={classes.link}>Share</Link> and inspire others with your experiences</p>
+  <p><Link href='/trips/share' className={classes.link}>share</Link> and inspire others with your experiences</p>
 </main>
 
     </>
