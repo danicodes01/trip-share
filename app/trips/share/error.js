@@ -1,9 +1,9 @@
 'use client'
-export default function GlobalError ({ reset }) {
+export default function CreatePostError ({ reset }) {
   return (
     <div className='error'>
       <h2>oh no!</h2>
-      <p>Failed to fetch data ...</p>
+      <p>We ran into some trouble creating your post ...</p>
       <button onClick={() => reset()}>Try again</button>
     </div>
   )
