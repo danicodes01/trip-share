@@ -7,7 +7,7 @@ export default function MainHeader() {
   return (
     <header className={classes.header}>
       <Link className={classes.logo} href='/'>
-        <Image src={logo} alt='logo' priority />
+        <p className={classes.highlight}>tripShare</p>
       </Link>
       <nav className={classes.nav}>
         <ul>
