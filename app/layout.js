@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "tripShare",
-  description: "share and inspire others with your experiences",
+  description: "share and inspire others with your experiences 🏝️",
 };
 
 export default function RootLayout({ children }) {
