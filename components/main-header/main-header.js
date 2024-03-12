@@ -1,6 +1,4 @@
 import Link from "next/link";
-import logo from "@/assets/logo.png";
-import Image from "next/image";
 import classes from './main-header.module.css'
 export default function MainHeader() {
 
