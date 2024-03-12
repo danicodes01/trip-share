@@ -6,11 +6,13 @@
     max-width: 75rem;
 }
 
-.header span {
+.highlight {
     background: var(--color-primary-600); 
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.15rem;
 }
 
 .header p {
