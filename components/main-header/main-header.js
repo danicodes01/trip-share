@@ -1,19 +1,20 @@
 import Link from "next/link";
 import classes from './main-header.module.css'
+import NavLink from "./nav-link";
 export default function MainHeader() {
 
   return (
     <header className={classes.header}>
-      <Link className={classes.logo} href='/'>
-        <p className={classes.highlight}>tripShare</p>
-      </Link>
+      <NavLink href='/'>
+      <span className={classes.highlight}>tripShare</span>
+      </NavLink>
       <nav className={classes.nav}>
         <ul>
           <li>
-            <Link href='/trips'>trips</Link>
+            <NavLink href='/trips'>trips</NavLink>
           </li>
           <li>
-            <Link href='/trips/share'>share</Link>
+            <NavLink href='/trips/share'>share</NavLink>
           </li>
         </ul>
       </nav>

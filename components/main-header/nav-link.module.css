@@ -1,0 +1,31 @@
+.active {
+    background: var(--color-grey-900);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .active span {
+    background: var(--color-grey-900);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  .link {
+    text-decoration: none;
+    color: var(--color-abbgrey-400);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .link a:hover,
+  .link a:active {
+    background: var(--color-abbgrey-900);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 18px var(--color-abbgrey-200);
+  }
