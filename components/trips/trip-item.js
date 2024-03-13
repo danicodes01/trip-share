@@ -13,7 +13,7 @@ export default function TripItem ({
       <article className={classes.trip}>
         <header>
           <div className={classes.image}>
-            <Image src={`https://ourtrips.s3.amazonaws.com/photos/${image}`} alt={title} fill />
+            <Image src={`https://ourtrips.s3.amazonaws.com/photos/${image}`} alt={title} layout="fill" />
           </div>
           <div className={classes.info}>
             <p>{title}</p>
