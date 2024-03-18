@@ -10,6 +10,8 @@ export default async function TripDetailPage ({ params }) {
     notFound()
   }
 
+  trip.description = trip.description.replace(/\n/g,'<br />')
+
   return (
     <>
       <header className={classes.header}>
@@ -22,7 +24,9 @@ export default async function TripDetailPage ({ params }) {
           <p>by {trip.author}</p>
         </div>
       <main>
-        <p className={classes.description}>{trip.description}</p>
+      <p className={classes.description} dangerouslySetInnerHTML={{
+            __html: trip.description
+        }}></p>
       </main>
       </header>
     </>
