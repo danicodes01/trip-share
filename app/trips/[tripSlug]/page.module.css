@@ -82,7 +82,10 @@
 
 
 .description a {
-  color: var(--color-grey-500);
+  background: var(--color-primary-600); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   letter-spacing: 0.15rem;
   text-decoration: none;
 }
@@ -90,7 +93,7 @@
 .description a:hover,
 .description a:active,
 .description a.active {
-color: #4c4c4c;
+opacity: 50%;
 }
 
 .description p {
